@@ -40,3 +40,13 @@ composer test
 ```
 
 That's it! Now go build something cool.
+
+
+### Fix with subdirectory localhost server
+
+In public/index.php
+```
+$app = AppFactory::create();
+$app->setBasePath("/testapp");//set your subdirectory
+```
+
